@@ -1,2 +1,2 @@
 # Organica
-Organic food shopping app.
+<h1>🌱 Organic Food Shopping Website</h1>
