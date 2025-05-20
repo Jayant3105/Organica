@@ -48,25 +48,53 @@
 
                 <ul class="navbar-list">
                     <li>
-                        <a href="./index.html" class="navbar-list">Home</a>
+                        <a href="./index.html" class="navbar-link">Home</a>
                     </li>
                      <li>
-                        <a href="./about.html" class="navbar-list">About</a>
+                        <a href="./about.html" class="navbar-link">About</a>
                     </li>
                      <li>
-                        <a href="./shop.html" class="navbar-list">Shop</a>
+                        <a href="./shop.html" class="navbar-link">Shop</a>
                     </li>
                      <li>
-                        <a href="./blog.html" class="navbar-list">Blog</a>
+                        <a href="./blog.html" class="navbar-link">Blog</a>
                     </li>
                      <li>
-                        <a href="./shop.html" class="navbar-list">Products</a>
+                        <a href="./shop.html" class="navbar-link">Products</a>
                     </li>
                      <li>
-                        <a href="./contact.html" class="navbar-list">Contact</a>
+                        <a href="./contact.html" class="navbar-link">Contact</a>
                     </li>
                 </ul>
              </nav>
+
+             <div class="header-action">
+                <div class="search-wrapper " data-search-wrapper>
+                    <button class="header-action-btn" aria-label="Toggle search" data-search-btn>
+                        <ion-icon name="search-outline" class="search-icon"></ion-icon>
+                        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+                    </button>
+
+                    <div class="input-wrapper">
+                        <input type="search" name="search" placeholder="Search here" class="search-input">
+
+                        <button class="search-submit" aria-label="Submit-search">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            
+                <button class="header-action-btn" aria-label="Open Wishlist" data-panel-btn="wishlist">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <data value="3" class="btn-badge">03</data>
+                </button>
+
+                <button class="header-action-btn" aria-label="Open shopping cart" data-panel-btn="cart">
+                    <ion-icon name="basket-outline"></ion-icon>
+                    <data value="2" class="btn-badge">02</data>
+                </button>
+
+             </div>
 
              
            </div>
