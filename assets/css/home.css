@@ -1,0 +1,79 @@
+/*--------------------------*/
+/* Hero*/
+/*--------------------------*/
+
+.hero-banner{
+    display: none;
+}
+
+.hero{
+    background-image: url("../images/hero-left-bg.png");
+    background-color: var(--mint-cream);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding-block: 80px;
+}
+
+.hero-subtitle{
+    color: var(--emerald);
+    font-family: var(--ff-playfair-display);
+    font-weight: var(--fw-700);
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-block-end: 20px;
+}
+
+.hero-title{
+    color:var(--gunmetal-2);
+    font-size: var(--fs-1);
+    margin-block-end: 15px;
+}
+
+.hero-title .span{
+    display: inline-block;
+    color: var(--emerald);
+    font-family: var(--ff-playfair-display);
+    font-weight: var(--fw-700);
+}
+
+.hero-text{
+    color: var(--roman-silver);
+    font-size: var(--fs-4);
+    line-height: 1.8;
+    margin-block-end: 30px;
+}
+
+
+/*--------------------------*/
+/* Service */
+/*--------------------------*/
+
+.service{
+    background-image: url("../images/partner-left-bg.png");
+    background-color: var(--shamrock-green);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-blend-mode: soft-light;
+}
+
+.service-list{
+    display: grid;
+    gap:15px;
+}
+
+.item-icon{
+    background-color: var(--white_25);
+    max-width: max-content;
+    padding: 20px;
+    border-radius:50%;
+}
+
+.service-item{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.item-title{
+    color: var(--white);
+}
