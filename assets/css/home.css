@@ -250,3 +250,110 @@
     min-width: 100%;
     scroll-snap-align: center;
 }
+
+
+
+
+/*--------------------------*/
+/* Testimonials */
+/*--------------------------*/
+
+
+.testimonials{ text-align: center;}
+
+.testimonials .section-title{ margin-block-end: 40px;}
+
+.testi-item{
+    margin-inline: 15px;
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+
+.testi-card{
+    background-color: var(--mint-cream);
+    padding: 30px 20px;
+}
+
+.testi-card .card-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.testi-card .card-avatar{ border-radius: 50%;}
+
+.testi-card .card-wrapper{margin-block: 30px 20px;}
+
+.testi-card .card-text{
+    color: var(--battleship-gray);
+    line-height: 1.7;
+    font-size: var(--fs-6);
+}
+
+.testi-card .card-title{
+    font-size: var(--fs-3);
+    font-weight: var(--fw-500);
+    margin-block: 25px 15px;
+}
+
+.testi-card .card-subtitle{
+    color: var(--emerald);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+}
+
+
+/*--------------------------*/
+/* Blog */
+/*--------------------------*/
+
+.blog{ padding-block-start: 0;}
+
+.blog .section-title{ margin-block-end: 40px;}
+
+.blog-list{
+    display: grid;
+    gap: 30px;
+}
+
+.blog-card :is(.card-banner, .card-content){ padding: 30px;}
+
+.blog-card .card-banner{ background-color: var(--mint-cream);}
+
+.blog-card .card-content{ border:2px solid var(--mint-cream);}
+
+.blog-card .card-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-card .wrapper-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--fs-7);
+    color:var(--battleship-gray);
+}
+
+.blog-card .wrapper-item ion-icon{
+    color: var(--emerald);
+    font-size: 1.5rem;
+}
+
+.blog-card .card-title{
+    margin-block: 20px 30px;
+    font-family: var(--ff-roboto);
+    color: var(--russian-violet);
+}
+
+.blogcard .card-title a{ transition: var(--transition-2);}
+
+.blog-card .card-title a:is(:hover, :focus) {color: var(--emerald);}
+
+
+
+
+
+
+
