@@ -354,6 +354,50 @@
 
 
 
+/*--------------------------*/
+/* Newsletter */
+/*--------------------------*/
+
+
+.newsletter{
+    margin-block-start: 0;
+}
+
+.newsletter-card{
+    background-color: var(--gunmetal-2);
+    padding: 80px 10px;
+}
+
+.newsletter .section-subtitle{ font-size: 1.6rem;}
+
+.newsletter .section-title{
+    color: var(--white);
+    font-size: var(--fs-3);
+    line-height: 1.6;
+    margin-block-end: 40px;
+}
+
+.newsletter .section-title .span{
+    color: var(--emerald);
+    font-size: var(--fs-4);
+}
+
+.newsletter-form{ margin-inline: 20px;}
+
+.newsletter .input-email{
+    background-color: var(--white);
+    color: var(--battleship-gray);
+    font-size: var(--fs-6);
+    padding: 17px 25px;
+    border-radius: 50px;
+    margin-block-end: 10px;
+}
+
+.newsletter .btn{
+    width: 100%;
+    justify-content: center;
+}
+
 
 
 
