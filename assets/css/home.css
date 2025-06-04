@@ -401,3 +401,99 @@
 
 
 
+/*--------------------------*/
+/* Media queries */
+/*--------------------------*/
+
+/* resposive for larger than 480px screen */
+
+
+@media(min-width: 480px){
+    /**
+    * Hero
+    */
+
+    .hero{
+        min-height: 550;
+        display:grid;
+        align-items: center;
+    }
+
+    /**
+    * Service
+    */
+
+    .service-item{ justify-content: center;}
+
+
+    /**
+    * Offers
+    */
+
+    .offer-card{
+        text-align: left;
+        height:100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 30px 40px;
+    }
+
+    .offers-card .card-banner{
+        margin-block-end: 0;
+        order:1;
+    }
+
+    .offers-card .btn{ margin-inline: 0;}
+
+    /**
+    * Products
+    */
+
+    .product .grid-list{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-card .card-banner img{ width:100%;}
+     
+
+    /**
+    * Partners
+    */
+
+    .partner-item{min-width: 33.33%;}
+
+
+    /**
+    * Newsletter
+    */
+
+    .newsletter :is(.section-subtitle, .input-email){font-size: 2rem;}
+
+    .newsletter .section-title {--fs-3: 2.4rem;}
+
+    .newsletter .section-title .span{
+        font-size: inherit;
+        display: inline-block;
+    }
+
+    .newsletter-form{ position: relative;}
+
+    .newsletter .input-email{
+        padding: 20px 30px;
+        padding-inline-end: 160px;
+    }
+
+    .newsletter .btn{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        bottom: 8px;
+        width: auto;
+        --padding: 0 30px;
+    }
+} 
+
+
+
+

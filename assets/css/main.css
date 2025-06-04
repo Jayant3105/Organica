@@ -772,3 +772,35 @@ body{
 }
 
 .back-to-top:is(:hover, :focus){ background-color: var(--emerald);}
+
+
+
+/*--------------------------*/
+/* Media queries */
+/*--------------------------*/
+
+/* resposive for larger than 480px screen */
+
+
+@media(min-width: 480px){
+
+    /* Header */
+
+    .nav-wrapper .container{padding-inline: 25px;}
+
+    .nav-wrapper .h1{
+        min-width:max-content;
+        order: 2;
+    }
+
+    .nav-open-btn {order:1;}
+
+    .header-action{
+        order:3;
+        min-width: max-content;
+        gap: 15px;
+    }
+
+    .input-wrapper {--translateX: -220px;}
+    
+}
