@@ -74,9 +74,7 @@
     gap:10px;
 }
 
-.item-title{
-    color: var(--white);
-}
+.item-title{ color: var(--white);}
 
 
 
@@ -120,8 +118,8 @@
 .offers-card .btn{
     max-width: max-content;
     margin-inline: auto;
-    --fs:var(--fs-8);
-    --fw:var(--fw-400);
+    --fs: var(--fs-8);
+    --fw: var(--fw-400);
     --padding: 12px 25px;
 }
 
@@ -206,12 +204,12 @@
 .top-product-card .card-banner{ margin-block-end: 40px;}
 
 .top-product-card .product-btn{
-    --padding:8px;
-    --fs:1.6rem;
+    --padding: 8px;
+    --fs: 1.6rem;
 }
 
 .top-product-card .card-content{
-    margin-block-end: 46px;
+    margin-block-end: -46px;
     transition: var(--transition-2);
 }
 
@@ -232,7 +230,7 @@
 /*--------------------------*/
 
 
-.partner{background-color: var(--emerald);}
+.partner{ background-color: var(--emerald);}
 
 .partner .section-subtitle{color: var(--white);}
 
@@ -347,7 +345,7 @@
     color: var(--russian-violet);
 }
 
-.blogcard .card-title a{ transition: var(--transition-2);}
+.blogcard .card-title a { transition: var(--transition-2);}
 
 .blog-card .card-title a:is(:hover, :focus) {color: var(--emerald);}
 
@@ -359,9 +357,7 @@
 /*--------------------------*/
 
 
-.newsletter{
-    margin-block-start: 0;
-}
+.newsletter{ margin-block-start: 0;}
 
 .newsletter-card{
     background-color: var(--gunmetal-2);
@@ -414,7 +410,7 @@
     */
 
     .hero{
-        min-height: 550;
+        min-height: 550px;
         display:grid;
         align-items: center;
     }
@@ -430,7 +426,7 @@
     * Offers
     */
 
-    .offer-card{
+    .offers-card{
         text-align: left;
         height:100%;
         display: grid;
@@ -480,7 +476,7 @@
     .newsletter-form{ position: relative;}
 
     .newsletter .input-email{
-        padding: 20px 30px;
+        padding: 25px 30px;
         padding-inline-end: 160px;
     }
 
@@ -495,5 +491,158 @@
 } 
 
 
+/* resposive for larger than 569px screen */
 
 
+@media(min-width: 569px){
+   
+    /**
+    * Hero
+    */
+    .hero{
+      background-image: url("../images/hero-left-bg.png"), url("../images/hero-right-bg.png");
+      background-repeat:no-repeat, no-repeat;
+      background-position: left bottom, right top;
+    }
+
+    .hero-title{--fs-1: 3.5rem;}
+
+
+    /**
+    * Service
+    */
+
+    .service-list { grid-template-columns: 1fr 1fr;}
+
+    /**
+    * CTA
+    */
+     
+    .cta .section-subtitle{ --fs-3: 3rem;}
+
+    .cta .section-title{ --fs-1: 3.5rem;}
+
+    .cta-text{ --fs-4: 2rem;}
+
+    /**
+    * Top Product
+    */
+
+    .top-product-card{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+    }
+
+    .top-product-card .card-banner{
+        margin-block-end: 0;
+        margin-inline: 0;
+    }
+
+    .top-product-card .rating-wrapper{ --justify-content:flex-start;}
+
+    .top-product-card .btn{ margin-inline: 0;}
+}
+ 
+
+/* resposive for larger than 768px screen */
+
+
+@media(min-width: 768px){
+
+    /**
+    Reused Style for Home
+    */
+
+    :is(.hero, .cta, .blog, .newsletter) .btn{
+        --fs: 1.8rem;
+        --fw: var(--fw-700);
+        --padding: 18px 50px;
+    }
+
+    /**
+    Hero
+    */
+
+    .hero-title{ --fs-1: 4.5rem;}
+
+    .hero-title .span{ font-size: 5.8rem;}
+
+    .hero-banner{ display: block;}
+
+    .hero .container{
+        display: grid;
+        grid-template-columns: 1fr 0.8fr;
+        align-items: center;
+    }
+
+    /**
+    Service
+    */
+
+    .service-list{ grid-template-columns: repeat(3, 1fr);}
+
+    /**
+    Offers
+    */
+
+    .offers-list { gap: 30px;}
+
+    .offers-item{
+        min-width: calc(50% - 15px);
+        margin-inline: 0;
+    }
+
+    /**
+    CTA
+    */
+
+    .cta{ padding-block:80px}
+
+    /**
+    Top Product
+    */
+
+    .top-product-list { grid-template-columns: 1fr 1fr;}
+
+    .top-product-card{
+        justify-content: flex-start;
+        gap: 15px;
+        height: 100%;
+    }
+
+    .top-product-card .card-banner{ min-width: 110px;}
+
+    /**
+    Partner
+    */
+
+    .partner-item{min-width: 25%;}
+
+    /**
+    Testimonials
+    */
+
+    .testi-item{min-width: 50%;}
+
+    /**
+    Blog
+    */
+     
+    .blog-list{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+    }
+
+    /**
+    Newsletter
+    */
+
+    .newsletter-card{
+        padding-inline: 25px;
+        background-image: url("../images/partner-left-bg.png"), url(../images/partner-right-bg.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left bottom, right top;
+    }
+}
