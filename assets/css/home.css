@@ -742,3 +742,43 @@
  
     .newsletter-card { padding-block: 150px;}
 }
+
+
+/* resposive for larger than 1200px screen */
+
+
+@media(min-width: 1200px){
+    
+    /**
+    Hero
+    */
+
+   .hero-title{ --fs-1: 5.8rem;}
+
+   .hero .container{ grid-template-columns: 1fr 1fr;}
+
+
+   /**
+    Offers
+   */
+
+   .offers-card .card-title{
+    --fs-4: 2.8rem;
+    margin-block: 20px;
+   }
+
+
+   /**
+    Partner
+   */
+
+   .partner {
+    padding-block: 150px;
+    background-image: url("../images/partner-left-bg.png"), url("../images/partner-right-bg.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, top right;
+   }
+
+   .partner-item{ min-width: 16.66%;}
+
+}
