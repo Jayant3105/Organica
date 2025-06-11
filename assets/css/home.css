@@ -646,3 +646,99 @@
         background-position: left bottom, right top;
     }
 }
+
+
+/* resposive for larger than 992px screen */
+
+@media(min-width: 992px){
+   
+    /**
+    Hero
+    */
+
+    .hero-title{--fs-1:5rem;}
+
+    /**
+    Service
+    */
+
+    .service-item{ gap:20px;}
+
+    .item-icon{ padding: 25px;}
+
+    .item-title{--fs-4: 2.7rem;}
+
+    /**
+    Offers
+    */
+
+    .offers-card {padding-block:70px;}
+
+    .offers-card .card-title{ --fs-4: 2.3rem;}
+
+    .offers-card .btn{
+        --fs-8: 1.5rem;
+        --padding: 15px 25px;
+    }
+
+    /**
+    Product
+    */
+
+    .filter-btn{
+        padding:30px;
+        gap:15px;
+    }
+
+    .filter-btn > img{transform:scale(1.5);}
+
+    .product .grid-list{ grid-template-columns: repeat(4, 1fr);}
+
+    
+    /**
+    CTA 
+    */
+
+    .cta{ padding-block: 120px;}
+
+    /**
+     Top Product
+    */
+
+    .top-product-list{ grid-template-columns: repeat(3,1fr);}
+
+    /**
+    Partner
+    */
+
+    .parter-item{min-width: 20%;}
+
+    /**
+    Testimonials
+    */
+
+    .testimonials .has-scrollbar{gap:30px}
+
+    .testi-item{
+        min-width: calc(33.33%-20px);
+        margin-inline: 0;
+    }
+
+    /**
+    Blog
+    */
+
+    .blog-list{ grid-template-columns: repeat(3, 1fr);}
+
+
+    /**
+    Newsletter
+    */
+
+    .newsletter-cardd > * {
+        max-width: 450px;
+        margin-inline: auto;
+    }
+ 
+    .newsletter-card { padding-block: 150px;}
+}
